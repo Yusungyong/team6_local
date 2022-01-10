@@ -1,0 +1,477 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@500;700&family=Roboto+Slab:wght@200&family=Ubuntu&display=swap');
+*{
+  list-style: none;
+
+}
+body{
+  margin-left: 150px;
+  margin-right: 150px;
+  height: 100vh;
+  background-image: url('../images/movie_main.jpg');
+  background-repeat : no-repeat;
+  background-size : cover;
+}
+nav {
+  margin-top: 48px;
+  
+}
+a {
+  color: white;
+  text-decoration: none;
+  padding: 18px 16px;
+}
+
+.logo {
+  margin-left: 120px;
+  font-weight: bold;
+  font-size: 48px;
+  float: left;
+}
+.list_main{
+  margin-right: 120px;
+  float: right;
+}
+.list_main ul{
+  display: flex;
+  
+  
+  
+}
+
+.list_main ul li{
+  font-weight: bold;
+  justify-content: space-between;
+  text-align: center;
+  font-size: 24px;
+  
+}
+.center{
+  color: white;
+  position:absolute; width:800px; height:200px; top:50%; left:46%; margin-top:-50px; margin-left:-50px; 
+  font-size: 80px;
+  font-weight: 500;
+  z-index:0;
+}
+.slider{
+  width: 500px;
+  height: 550px;
+  top: 18%; /* 관리자 로그인시 18%로 조정 아닐시 13%*/
+  left: 35%;
+  position: relative;
+  display: flex; /* 관리자 접속시 none 회원 접속시 flex */
+}
+.slide{
+  width: 500px;
+  height: 550px;
+  background-size: cover;
+  border-radius: 10px;
+  animation: fade 1.5s;
+  display: none;
+}
+.prev,
+.next{
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  padding: 16px;
+  color: rgb(248, 248, 248);
+  font-size: 2rem;
+  transition: 0.6s ease;
+  border-radius: 5px;
+}
+.next{
+  right: 0;
+}
+.prev:hover,
+.next:hover{
+  background-color: rgba(190, 190, 190, 0.5);
+}
+
+
+@keyframes fade{
+  from{
+    opacity: 0.4;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.list_main ul>li a:hover {
+  color: #fff;
+  background: #0ed1f0;
+  border-radius: 17px;
+  transition: all 0.3s ease-in;
+   }
+.home_btn{
+  background-color: #0ed1f0;;
+  border-radius: 17px;
+}
+
+input {
+  position: relative;
+  display: inline-block;
+  font-size: 14px;
+  box-sizing: border-box;
+  transition: .5s;
+  
+}
+form#search input[type="text"]{
+  background: #fff;
+  width: 150px;
+  height: 40px;
+  border: none;
+  outline: none;
+  padding: 0 24px;
+  border-radius: 25px 0 0 25px;
+  top:-6px;
+}
+form#search input[type="submit"]{
+  top:-5px;
+  position: relative;
+  border-radius: 0 25px 25px 0;
+  width: 70px;
+  height: 40px;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  background-color: #ffc107;
+  color: white;
+}
+form#search input[type="submit"]:hover{
+  background-color: #ff5722;
+}
+.bottom{
+  color: white;
+  position: absolute;
+  bottom: 50px;
+  left: 42%;
+}
+
+.create{
+  animation: fade 1.5s;
+  position: absolute;
+  width: 50%;
+  top: 18%;
+  left: 33%;
+  display: none;
+
+}
+.create_form input {
+  border-radius: 18px;
+  width: 150px;
+  height: 40px;
+}
+
+.create_form input[type="text"],input[type="number"]{
+  background: #fff;
+  width: 200px;
+  height: 40px;
+  border: none;
+  outline: none;
+  padding: 0 24px;
+  border-radius: 25px;
+  margin: 12px;
+}
+select {
+  background: #fff;
+  width: 200px;
+  height: 40px;
+  border: none;
+  outline: none;
+  padding: 0 24px;
+  border-radius: 25px;
+  margin-left: 12px;
+}
+.btn{
+  border-radius: 12px;
+  background-color: black;
+  border: 0;
+  outline: 0;
+  width: 72px;
+  height: 30px;
+  color: white;
+  font-size: 24px;
+}
+.btn_ud{
+  border-radius: 12px;
+  background-color: black;
+  border: 0;
+  outline: 0;
+  display:inline;
+  color: white;
+  font-size: 20px;
+}
+.btn_index{
+  border-radius: 12px;
+  background-color: black;
+  border: 0;
+  outline: 0;
+  width: 172px;
+  height: 30px;
+  color: white;
+  font-size: 24px;
+}
+
+.btn:hover{
+  cursor: pointer;
+}
+.btn_ud:hover{
+  cursor: pointer;
+}
+.btn_index:hover{
+  cursor: pointer;
+}
+/* 관리자 로그인시에만 출력 */
+.controll{
+  animation: fade 1.5s;
+  position: absolute;
+  width: 70%;
+  top: 20%;
+  left: 40%;
+  /* display: none; */
+}
+.controll .btn_index{
+  color: white;
+  font-size: 30px;
+  margin: 10px;
+  font-weight: 600;
+}
+
+.title_line{
+    display:none;
+    
+}
+.message{
+    color:white;
+    position:absolute;
+    float:center;
+    left: 32%;
+    top: 40%;
+    
+    margin:14px;
+}
+.li_none{
+    font-size:24px;
+    text-align:center;
+}
+.controll .btn_index:hover{font-size: 29px;}
+
+.btn_msg{
+  border-radius: 12px;
+  background-color:black ;
+  cursor:pointer;
+  border: 0;
+  outline: 0;
+  width: 72px;
+  height: 30px;
+  color: white;
+  font-size: 28px;
+  font-weight: 700;
+}
+.list{
+  width: 1000px;
+  height: 300px;
+  top: 30%; /* 관리자 로그인시 18%로 조정 아닐시 13%*/
+  left: 24%;
+  position: absolute;
+  display: block; /* 관리자 접속시 flex 회원 접속시 none */
+  background-color:black;
+  color:white;
+  font-size:18px;
+}
+.thead{
+    display:flex;
+    text-align:center;
+    border-bottom: 2px solid white;
+    
+}
+.thead div{width:170px;}
+.tdata{
+    display:flex;
+    text-align:center;
+    padding: 0px;
+
+}
+.tdata a{padding:0px;}
+.tdata div{width:170px; margin-bottom:6px; margin-top:6px;}
+    
+.th_bs{
+    margin-bottom:10px;
+}    
+form#frm_delete{
+    width:75px;
+    display:inline;
+}
+form#frm_update{
+    width:75px;
+    display:inline;
+}
+
+.update{
+  animation: fade 1.5s;
+  position: absolute;
+  width: 50%;
+  top: 40%;
+  left: 33%;
+  display: block;
+
+}
+.update_form input {
+  border-radius: 18px;
+  width: 150px;
+  height: 40px;
+}
+
+.update_form input[type="text"],input[type="number"]{
+  background: #fff;
+  width: 200px;
+  height: 40px;
+  border: none;
+  outline: none;
+  padding: 0 24px;
+  border-radius: 25px;
+  margin: 12px;
+}     	
+
+.content_body_member{
+	z-index:0;
+    position:relative;
+    display:flex;
+    top:150px;
+    left:80px;
+	width: 100%;
+   	justify-content:center;
+   	align-items:center;
+} 
+   
+.member_bar input {
+  border-radius: 12px;
+  background-color: #ffffff;
+  border: 0;
+  outline: 0;
+  width: 172px;
+  height: 30px;
+  color: black;
+  font-size: 16px;
+}
+.member_bar input[type="text"],input[type="password"]{
+    padding: 0 18px;
+}
+
+div.form-group{
+    width:500px;
+}
+.btn_members{
+  border-radius: 12px;
+  background-color: black;
+  border: 0;
+  outline: 0;
+  width: 120px;
+  height: 30px;
+  color: white;
+  font-size: 16px;
+  font-weight: 600;
+    }  
+.btn_members:hover{
+    cursor: pointer;
+    }
+    
+.member_create_title p {
+	position:absolute;
+	display:flex;
+	top:-20%;
+    font-size:48px;
+    font-weight:700;
+    color:white;
+    margin:0;
+}
+
+label {
+	color:white;
+	margin: 3px;
+	padding-bottom:18px;
+}
+
+.fade {
+	display:none;
+}
+.modal{
+	width: 100%; height: 100%;
+	position: fixed;
+	justify-content: center;
+	top: 0; left: 0;
+}
+
+.modal-dialog{
+	background: rgba(255, 255, 255, 0.8);
+	width:100%;
+	height:100%;
+	position:absolute;
+	color:white;
+}
+.modal-content{
+	background: black;
+	width:10%;
+	padding: 50px 100px;
+	text-align: center;
+	justify-content: center;
+	border-radius: 8px;
+}
+
+
+.btn_close{
+  border-radius: 12px;
+  background-color: black;
+  border: 0;
+  outline: 0;
+  width: 120px;
+  height: 30px;
+  color: white;
+  font-size: 24px;
+  font-weight: 600;
+}
+
+.btn_close:hover{cursor:pointer;}
+
+.content_body_login{
+	z-index:0;
+    position:relative;
+    display:flex;
+    top:25%;
+    left:26%;
+	width: 100%;
+   	justify-content:center;
+   	align-items:center;
+} 
+
+.btn_login {
+	width:100%;
+	display:inline-block;
+	justify-content:left;
+}
+
+.btn_login .form-control{
+	width: 100%;
+	height:34px;
+	border-radius: 12px;
+	outline:0;
+	border: 0;
+}
+
+
+.btn_login button{
+	width:150px;
+	margin-top: 10px;
+
+}
+.btn_login label {
+	width: 100%;
+}
+
+.login_id{
+	color:white;
+}
+    
+/* 관리자 로그인시에만 출력 */
