@@ -7,7 +7,7 @@
 <head> 
 <meta charset="UTF-8"> 
 <meta name="viewport" content="user-scalable=yes, initial-scale=1.0, maximum-scale=3.0, width=device-width" /> 
-<title>Resort world</title>
+<title>회원가입</title>
 
 <script type="text/JavaScript"
           src="http://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
@@ -178,34 +178,42 @@
     </div>   
                 
     <div class="form-group">
-      <label for="passwd" class="col-md-2 control-label" style='font-size: 0.9em;'>패스워드*</label>    
+      <label for="pw" class="col-md-2 control-label" style='font-size: 0.9em;'>패스워드*</label>    
       <div class="member_bar">
-        <input type='password' class="form-control" name='passwd' id='passwd' value='' required="required" style='width: 30%;' placeholder="패스워드">
+        <input type='password' class="form-control" name='pw' id='pw' value='' required="required" style='width: 30%;' placeholder="패스워드">
       </div>
     </div>   
 
     <div class="form-group">
-      <label for="passwd2" class="col-md-2 control-label" style='font-size: 0.9em;'>패스워드 확인*</label>    
+      <label for="pw2" class="col-md-2 control-label" style='font-size: 0.9em;'>패스워드 확인*</label>    
       <div class="member_bar">
-        <input type='password' class="form-control" name='passwd2' id='passwd2' value='' required="required" style='width: 30%;' placeholder="패스워드">
+        <input type='password' class="form-control" name='pw2' id='pw2' value='' required="required" style='width: 30%;' placeholder="패스워드">
       </div>
     </div>   
     
     <div class="form-group">
-      <label for="mname" class="col-md-2 control-label" style='font-size: 0.9em;'>성명*</label>    
+      <label for="nickname" class="col-md-2 control-label" style='font-size: 0.9em;'>성명*</label>    
       <div class="member_bar">
-        <input type='text' class="form-control" name='mname' id='mname' 
+        <input type='text' class="form-control" name='nickname' id='nickname' 
                    value='' required="required" style='width: 30%;' placeholder="성명">
       </div>
     </div>   
 
     <div class="form-group">
-      <label for="tel" class="col-md-2 control-label" style='font-size: 0.9em;'>전화번호*</label>    
+      <label for="phone" class="col-md-2 control-label" style='font-size: 0.9em;'>전화번호*</label>    
       <div class="member_bar">
-        <input type='text' class="form-control" name='tel' id='tel' 
+        <input type='text' class="form-control" name='phone' id='phone' 
                    value='' required="required" style='width: 30%;' placeholder="전화번호"> 예) 010-0000-0000
       </div>
     </div>   
+
+    <div class="form-group">
+      <label for="'email'" class="col-md-2 control-label" style='font-size: 0.9em;'>이메일*</label>    
+      <div class="member_bar">
+        <input type='text' class="form-control" name='email' id='email' 
+                   value='' required="required" style='width: 30%;' placeholder="이메일">  예) example@naver.com
+      </div>
+    </div>  
 
     <div class="form-group">
       <label for="zipcode" class="col-md-2 control-label" style='font-size: 0.9em;'>우편번호</label>    

@@ -10,6 +10,7 @@ body{
   background-image: url('../images/movie_main.jpg');
   background-repeat : no-repeat;
   background-size : cover;
+  color:white;
 }
 nav {
   margin-top: 48px;
@@ -42,7 +43,7 @@ a {
   font-weight: bold;
   justify-content: space-between;
   text-align: center;
-  font-size: 24px;
+  font-size: 18px;
   
 }
 .center{
@@ -340,7 +341,7 @@ form#frm_update{
     position:relative;
     display:flex;
     top:150px;
-    left:80px;
+    left:60px;
 	width: 100%;
    	justify-content:center;
    	align-items:center;
@@ -351,7 +352,7 @@ form#frm_update{
   background-color: #ffffff;
   border: 0;
   outline: 0;
-  width: 172px;
+  width: 190px;
   height: 30px;
   color: black;
   font-size: 16px;
@@ -473,5 +474,122 @@ label {
 .login_id{
 	color:white;
 }
+.message {
+    position: absolute;
+    left:39%;
+    top:42%
+}
+.btn_home{
+    outline:0;
+    border:0;
+    background: black;
+    font-size:24px;
+    color:white;
+}
+
+.btn_home:hover{
+    background: #0ed1f0;
+    border-radius:8px;
+}
+.message_fail {
+    left:37.5%;
+    color:white;
+    position:absolute;
+    float:center;
+    top: 40%;
+
+}
+.content_body_member_read{
+    z-index:0;
+    position:relative;
+    display:flex;
+    top:20%;
+    left:28%;
+    width: 50%;
+    justify-content:center;
+    align-items:center;
+} 
+btn_members_update{
+    background:black;
+}
+.message_fail button{width:150px;}
+
+.content_body_member_list{
+    z-index:0;
+    position:relative;
+    top:20%;
+    left:8%;
+    width: 90%;
+    justify-content:center;
+    align-items:center;
+    display:inline-block;
+}
+.aside_right{
+    display:flex;
+    padding: 16px;
+    font-size : 24px;
+    text-align: center;
+    font-weight: 600;
     
+}
+.aside_right a {
+    padding:0 12px;
+    
+}
+tr{
+    text-align:center;
+    margin-bottom:4px;
+    border-bottom: 1px solid white;
+}
+tr.member{
+   
+}
+.bottom_menu{
+    display:flex;
+    float:right;
+    margin-right: 80px;
+}
+.bottom_menu button{
+    width:150px;
+    padding: 8px;
+    font-size: 24px;
+    font-weight: 600;
+    
+}
+
+td.td_left a{padding:0px;}
+
+.content_body_movie_list{
+    z-index:0;
+    position:relative;
+    top:20%;
+    left:8%;
+    width: 90%;
+    justify-content:center;
+    align-items:center;
+    display:inline-block;
+}
+td a {
+    padding:0px;
+}
+.create_form_move{
+    position:relative;
+    color:white;
+    font-size: 44px;
+    font-weight: 600;
+    width:100%;
+    text-align:center;
+    margin-bottom: 20px;
+    left: -50px;
+}
+a:hover{
+  color: #fff;
+  background: #0ed1f0;
+  border-radius: 17px;
+  transition: all 0.3s ease-in;
+}
+
+
+
+
 /* 관리자 로그인시에만 출력 */

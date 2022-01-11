@@ -32,6 +32,8 @@ public class MemberVO {
   private String nickname = "";
   /** 전화 번호 */
   private String phone = "";
+  /** 이메일 */
+  private String email = "";
   /** 우편 번호 */
   private String zipcode = "";
   /** 주소 1 */
